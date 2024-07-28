@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek kumar Modini - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+       nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 90px;
+        background-color: rgb(18,18,62);
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin :0 23px;
+        }
+        .section {
+            padding: 6rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 100vh;  
+        }
+        nav ul a li{
+            text-decoration: none;
+            color:white;
+        }
+        nav ul a:hover li{
+            color:rgb(153,153,226);
+            font-size: 1.04rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display:flex;
+            justify-content: space-around;
+        }
+        .firstSection > div {
+            width:30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+            margin:110px;
+        }
+        .rightSection img{
+            width:80%;
+            margin:50px;
+
+        }
+        .pink{
+            color: palevioletred;
+        }
+        #element{
+            color: palevioletred;
+        }
+    
+        .leftSection .btn{
+            padding:12px;
+        }
+        .leftSection .buttons{
+            padding:50px 0px;
+    
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .section p {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Vivek's Portfolio </div>
+            <div class="right"> 
+                <ul>
+                    <a href="#Home"><li>Home</li></a>
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Contact"><li>Contact Me</li></a>
+                    <a href="#Skills"><li>Skills</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="firstSection">
+            <div class="leftSection">
+                Hello, Iam <span class="pink"> <pre><h1>Vivek kumar Modini</h1></pre></span>
+                and I am a  
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="D:\prog\vaultofcodes\zipport\Portfolio\VIVEK KUMAR MODINI accenture.pdf"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">Download Resume</button></a>
+                    <a href="https://github.com/vivekkumarvk55"><button class="btn" style="background-color:#1e2167; color:white; border:2px solid white; font-size:20px;border-radius:5%">Visit GitHub</button></a>
+                </div>
+            </div>
+                
+            <div class="rightSection">
+                <img src="bg.webp" alt="" >
+            </div>
+        </section>
+        <section id="Skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, JavaScript, C++</li>
+                <li>Web Development: HTML, CSS, React, Django</li>
+                <li>Tools: Git, Docker, SQL</li>
+            </ul>
+        </section>
+    
+        <section id="About" class="section">
+            <h2>About Me</h2>
+            <p>I am a dedicated and passionate developer with a strong background in computer science and web development. I have experience in various programming languages and technologies, and I am always eager to learn and take on new challenges.</p>
+        </section>
+        <section id="Contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:modinivivek@gmail.com">Mail</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/vivek-kumar-modini/">linkedin</a></p>
+            <!-- Add more contact methods as needed -->
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['under graduate student'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
